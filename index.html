@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./data/style.css">
+    <link rel="stylesheet" href="./fontawesome-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.0/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap" rel="stylesheet">
+    <title>Tienda 724</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="uk-flex uk-flex-between navbar-adminorders">
+        <div class="uk-flex uk-flex-middle">
+            <div uk-toggle="target: .menu-vertical-adminorders; cls: show" class="padding-horizontal-20">
+                <i class="fas fa-bars font-size-20 color-blue cursor-pointer" style="margin-left: 10px;" uk-toggle="target: .main-container-adminorders; cls: width-menu-vertical-adminorders"></i>
+            </div>
+            <div>
+                <img src="./data/logo1.png" class="logo-size-adminorders" alt="">
+            </div>
+            <div class="uk-inline">
+                <div class="cursor-pointer uk-flex uk-flex-middle" style="margin-left: 60px;">
+                    <img class="logo-store-size-adminorders" src="./data/logo2.png " alt=" ">
+                    <i class="fas fa-caret-down font-size-17"></i>
+                </div>
+                <div uk-drop="mode: click">
+                    <div style="position: relative;">
+                        <div class="drop-store-adminorders">
+                            <ul class="uk-list " style="padding-bottom: 20px;">
+                                <h6 class="uk-margin-remove font-size-10" style="width: 65px; padding-bottom: 10px;">Documento del proveedor</h6>
+                                <div class="hr-tab"></div>
+                                <button class="button-search-supplier-adminorders uk-text-bold">Buscar proveedor</button>
+                                <h6 class=" uk-margin-remove font-size-10">Seleccione tienda proveedora</h6>
+                                <div class="select-supplier-adminorders">
+                                    <select>
+                                        <option>--</option>
+                                        <option>opción 1</option>
+                                        <option>opción 2</option>
+                                        <option>opción 3</option>
+                                        <option>opción 4</option>
+                                    </select>
+                                    <div class="select_arrow-supplier-adminorders">
+                                    </div>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Proveedor:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">--</h6>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Documento:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">--000</h6>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Teléfono:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">000</h6>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Dirección:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">N/A</h6>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-inline cursor-pointer padding-horizontal-30 uk-flex uk-flex-middle">
+            <button class="button-data-user-adminorders uk-flex uk-flex-middle">
+                <img class="logo-user-size-adminorders" src="./data/user.png " alt=" ">
+                <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Mireya Mopan</h4>
+                <i class="fas fa-caret-down "></i>
+            </button>
+            <div uk-drop="mode: click">
+                <div class="uk-card uk-card-body uk-card-default uk-box-shadow-large drop-data-user-adminorders">
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove">Roles activados:</h5>
+                        <h5 class="uk-margin-remove ">Propietario de la empresa</h5>
+                    </div>
+                    <div class="hr-tab"></div>
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove ">Su documento es:</h5>
+                        <h5 class="uk-margin-remove ">CC: 55555555555001</h5>
+                    </div>
+                    <div class="hr-tab"></div>
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove">Id de usuario:</h5>
+                        <h5 class="uk-margin-remove ">94518</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Menu vertical ERP-->
+    <div style="position: relative;">
+        <div class="menu-vertical-adminorders">
+            <ul class="uk-list" style="padding-bottom: 20px;">
+                <div class="uk-flex uk-flex-between">
+                    <div style="margin-left: 33px;">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold">ERP</h4>
+                        <h4 class="uk-margin-remove color-blue uk-text-bold">Dashboard</h4>
+                    </div>
+                    <div style="padding-right: 5px;">
+                        <div uk-toggle="target: .menu-vertical-adminorders; cls: show" style="margin-right: 10px;">
+                            <i class=" fas fa-times font-size-17 color-blue cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-adminorders">
+                        <img class="img-menu-vertical-size-adminorders" src="./data/7.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Inventario</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-adminorders">
+                        <img class="img-menu-vertical-size-adminorders" src="./data/8.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Reportes</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-adminorders">
+                        <img class="img-menu-vertical-size-adminorders" src="./data/9.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Tercero</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-adminorders">
+                        <img class="img-menu-vertical-size-adminorders" src="./data/10.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Contabilidad</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-adminorders">
+                        <img class="img-menu-vertical-size-adminorders" src="./data/11.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-adminorders">
+                        <img class="img-menu-vertical-size-adminorders" src="./data/12.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Crear producto</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-adminorders">
+                        <img class="img-menu-vertical-size-adminorders" src="./data/13.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Opciones de caja</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-adminorders">
+                        <img class="img-menu-vertical-size-adminorders" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Domicilios</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-adminorders">
+                        <img class="img-menu-vertical-size-adminorders" src="./data/15.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12" style="width: 100px;">Administracion de pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-adminorders">
+                        <img class="img-menu-vertical-size-adminorders" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Mesas</h4>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!-- Eliminar Faltantes-->
+    <div style="display: inline;">
+        <!-- Contenido -->
+        <div class="main-container-adminorders">
+            <div class="uk-flex uk-flex-middle navbar-search-products-adminorders">
+                <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 30px; padding-top: 18px; height: 45px; border-bottom: 18px solid white;">
+                    <h4 class="uk-margin-remove uk-text-bold">Administración de pedidos</h4>
+                </div>
+                <div class="uk-flex uk-flex-middle uk-flex-center button-categories-adminorders" style="width: 180px !important;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-top: 21px;">Eliminar faltantes</h6>
+                </div>
+                <div style="margin-left: 30px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Asociar productos</h6>
+                </div>
+                <div style="margin-left: 53px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Procesados</h6>
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-middle" uk-grid>
+                <div class="uk-with-1-2" style="width: 570px;">
+                    <div class="delete-missing-adminorders-one">
+                        <h6 class="uk-margin-remove color-blue font-size-12 font-weight-500">Eliminar Faltantes</h6>
+                        <div class="uk-flex" style="margin-top: 15px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-9 ">Seleccione la tienda</h6>
+                                <div class="select-create-product-adminorders" style=" width: 130px;">
+                                    <select>
+                                        <option>Sysware</option>
+                                        <option>opción 1</option>
+                                        <option>opción 2</option>
+                                        <option>opción 3</option>
+                                        <option>opción 4</option>
+                                    </select>
+                                    <div class="select_arrow-create-product-adminorders">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button-delete-missing-adminorders">Eliminar Faltantes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-with-1-2">
+                    <div class="delete-missing-adminorders-two">
+                        <h6 class="uk-margin-remove color-blue font-size-12 font-weight-500">Vaciar inventario</h6>
+                        <div class="uk-flex" style="margin-top: 15px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-9 ">Seleccione la tienda</h6>
+                                <div class="select-create-product-adminorders" style=" width: 130px;">
+                                    <select>
+                                        <option>Sysware</option>
+                                        <option>opción 1</option>
+                                        <option>opción 2</option>
+                                        <option>opción 3</option>
+                                        <option>opción 4</option>
+                                    </select>
+                                    <div class="select_arrow-create-product-adminorders">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button-delete-missing-adminorders">Vaciar inventario</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-shadow-down-adminorders" style="height: 3px !important;"></div>
+        </div>
+    </div>
+    <!-- Asociar Productos -->
+    <div style="display: none">
+        <div class="main-container-adminorders">
+            <div class="uk-flex uk-flex-middle navbar-search-products-adminorders">
+                <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; ">
+                    <h4 class="uk-margin-remove uk-text-bold">Administración de pedidos</h4>
+                </div>
+                <div>
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-left: 60px;">Eliminar faltantes</h6>
+                </div>
+                <div class="button-trademark-adminorders uk-flex uk-flex-middle uk-flex-center" style="margin-left: 50px; width: 160px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer" style="padding-top: 21px;">Asociar productos</h6>
+                </div>
+                <div style="margin-left: 40px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Procesados</h6>
+                </div>
+            </div>
+            <div>
+                <div class="uk-flex uk-flex-middle margin-factor">
+                    <div>
+                        <h6 class="uk-margin-remove font-size-12 color-blue font-weight-500">Factor</h6>
+                        <input class="input-register-user-adminorders font-size-12 uk-text-center" type="text" placeholder="6" style="width: 120px;">
+                    </div>
+                    <div>
+                        <input class="input-register-user-adminorders-grey font-size-13" type="text" placeholder="Código de producto padre" style="margin-left: 48px; margin-top: 23px; width: 200px;">
+                    </div>
+                    <div>
+                        <input class="input-register-user-adminorders-grey font-size-13" type="text" placeholder="Código de producto hijo" style="margin-left: 55px; margin-top: 23px; width: 200px;">
+                    </div>
+                </div>
+                <div class="box-shadow-down-adminorders" style="height: 5px;">
+                </div>
+                <div class="uk-child-width-1-2" uk-grid>
+                    <div class="uk-margin-remove uk-padding-remove" style="border-right: 1px solid grey ;">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold uk-text-center" style="padding-top: 25px; padding-bottom: 10px;">Producto Padre</h4>
+                        <button class="button-search-actualice-adminorders uk-align-center uk-margin-remove-top uk-margin-remove-bottom" style="height: 20px; width: 170px; color: #4496fa;">Producto - 2</button>
+                        <div class="box-shadow-down-adminorders" style="height: 5px; margin-top: 20px;"></div>
+                    </div>
+                    <div class="uk-margin-remove uk-padding-remove">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold uk-text-center" style="padding-top: 25px; padding-bottom: 10px;">Producto hijo</h4>
+                        <button class="button-search-actualice-adminorders uk-align-center uk-margin-remove-top uk-margin-remove-bottom" style="height: 20px; width: 170px; color: #4496fa;">Producto - 1</button>
+                        <div class="box-shadow-down-adminorders" style="height: 5px; margin-top: 20px;"></div>
+                    </div>
+                </div>
+                <div class="uk-child-width-1-2 uk-margin-remove-top" uk-grid>
+                    <div class="uk-margin-remove uk-padding-remove" style="border-right: 1px solid grey ;">
+                        <img class=" lupa-size uk-align-center" src="./data/LUPA.png" alt="">
+                        <h5 class="uk-margin-remove color-blue uk-text-bold uk-text-center">Ingrese producto</h5>
+                        <div class="box-shadow-down-adminorders" style="height: 5px; margin-top: 50px;"></div>
+                    </div>
+                    <div class="uk-margin-remove uk-padding-remove">
+                        <img class=" lupa-size uk-align-center" src="./data/LUPA.png" alt="">
+                        <h5 class="uk-margin-remove color-blue uk-text-bold uk-text-center">Ingrese producto</h5>
+                        <div class="box-shadow-down-adminorders" style="height: 5px; margin-top: 50px;"></div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px; margin-right: 40px;">
+                    <button class="button-search-actualice-adminorders uk-align-center" style="height: 25px; width: 160px; color: #4496fa;">Asociar productos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Procesados -->
+    <div style="display: none">
+        <div class="main-container-adminorders">
+            <div class="uk-flex uk-flex-middle navbar-search-products-adminorders">
+                <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; ">
+                    <h4 class="uk-margin-remove uk-text-bold">Administración de pedidos</h4>
+                </div>
+                <div>
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-left: 78px;">Eliminar faltantes</h6>
+                </div>
+                <div style="margin-left: 40px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Asociar productos</h6>
+                </div>
+                <div class="button-trademark-adminorders uk-flex uk-flex-middle uk-flex-center" style="margin-left: 40px; width: 150px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer" style="padding-top: 21px;">Procesados</h6>
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-middle margin-factor-two">
+                <div>
+                    <h6 class="uk-margin-remove font-size-11 ">Seleccione tienda</h6>
+                    <div class="select-create-product-adminorders " style="width: 120px;">
+                        <select style="color: rgba(0, 0, 182, 0.459);">
+                                <option>Sysware</option>
+                                <option>opción 1</option>
+                                <option>opción 2</option>
+                                <option>opción 3</option>
+                                <option>opción 4</option>
+                            </select>
+                        <div class="select_arrow-create-product-adminorders">
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-left: 40px;">
+                    <h6 class="uk-margin-remove font-size-11 ">Seleccione tienda</h6>
+                    <div class="select-create-product-adminorders " style="width: 120px;">
+                        <select style="color: rgba(0, 0, 182, 0.459);">
+                                <option>APP Tienda724</option>
+                                <option>opción 1</option>
+                                <option>opción 2</option>
+                                <option>opción 3</option>
+                                <option>opción 4</option>
+                            </select>
+                        <div class="select_arrow-create-product-adminorders">
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-left: 5px;">
+                    <button class="button-search-actualice-adminorders-two">Consultar</button>
+                </div>
+            </div>
+            <div class="box-shadow-down-adminorders" style="height: 5px;"></div>
+            <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-left: 40px; margin-right: 40px; margin-top: 20px; margin-bottom: 15px;">
+                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-200">Código barras padre</h6>
+                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-90">Producto padre</h6>
+                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-120">Código de barras hijo</h6>
+                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-90">Dirección</h6>
+                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-90">Teléfono</h6>
+                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-120">Observaciones</h6>
+            </div>
+            <div class="hr-tab"></div>
+        </div>
+    </div>
+</body>
+
+</html>
