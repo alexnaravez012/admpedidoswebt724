@@ -193,8 +193,7 @@
     }
     
     .logo-size-adminorders {
-        height: 70px;
-        width: 200px;
+        width: 180px;
         cursor: pointer;
     }
     
@@ -233,7 +232,6 @@
     }
     
     .logo-store-size-adminorders {
-        height: 40px;
         width: 130px;
     }
     
@@ -255,8 +253,7 @@
     }
     
     .img-menu-vertical-size-adminorders {
-        height: 40px;
-        width: 45px;
+        width: 30px;
         margin-right: 10px;
     }
     
@@ -1147,7 +1144,7 @@
         border: 1px solid rgba(177, 177, 177, 0.938);
         border-radius: 10px;
         font-size: 11px;
-        color: rgb(0, 0, 184);
+        color: black;
         background-color: white;
         height: 28px;
         margin-bottom: 30px;
@@ -1189,7 +1186,7 @@
         outline: 0;
         border: none;
         font-size: 11px;
-        border-bottom: 1px solid #85bcff !important;
+        border-bottom: 1px solid black !important;
         border-radius: 0px;
         background: #ffffff;
         color: rgba(0, 0, 0, 0.493);
@@ -1563,7 +1560,7 @@
         outline: 0;
         border: none;
         font-size: 11px;
-        border-bottom: 1px solid #85bcff !important;
+        border-bottom: 1px solid rgb(179, 179, 179) !important;
         border-radius: 0px;
         background: #ffffff;
         color: rgba(0, 0, 0, 0.5);
@@ -1800,7 +1797,7 @@
     
     .input-register-user-adminorders {
         border: none;
-        border-bottom: 1px solid #85bcff;
+        border-bottom: 1px solid rgb(187, 187, 187);
         width: 180px;
         color: rgba(0, 0, 182, 0.527);
         cursor: pointer;
@@ -1818,7 +1815,7 @@
     
     .input-register-user-adminorders-grey {
         border: none;
-        border-bottom: 1px solid #85bcff;
+        border-bottom: 1px solid rgb(187, 187, 187);
         width: 180px;
         color: rgba(150, 150, 150, 0.664);
         cursor: pointer;
@@ -2100,7 +2097,6 @@
         margin-top: 20px;
         height: 20px;
         width: 160px;
-        color: #4496fa;
         margin-left: 20px;
         border-radius: 8px;
         background-color: white;
@@ -2129,7 +2125,7 @@
         border: 1px solid rgba(179, 179, 179, 0.651);
         height: 20px;
         background-color: white;
-        color: #4496fa;
+        color: #9b9b9b;
         border-radius: 10px;
         cursor: pointer;
         padding-left: 25px;
@@ -2138,4 +2134,22 @@
         font-size: 10.5px;
         margin-top: 20px;
         margin-left: 30px;
+    }
+    
+    .color-red {
+        color: #ED2C27;
+    }
+    
+    .color-red-3 {
+        color: rgb(185, 33, 33);
+    }
+    
+    .color-red-two {
+        color: #9C2523;
+    }
+    
+    .icon-menu-adminorders {
+        width: 20px;
+        height: 18px;
+        cursor: pointer;
     }
